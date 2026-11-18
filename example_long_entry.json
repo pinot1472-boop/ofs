@@ -1,0 +1,83 @@
+{
+  "schema": "order-flow-strategy/v1",
+  "event": "LONG_ENTRY",
+  "symbol": "BINGX:BTCUSDT.P",
+  "timeframe": "5",
+  "time": "2026-11-16T15:35:00Z",
+  "price": {
+    "open": 61940.0,
+    "high": 62010.0,
+    "low": 61920.0,
+    "close": 62000.0,
+    "volume": 412.3
+  },
+  "environment": {
+    "window_open": true,
+    "structure": "VALUE_UP",
+    "htf1": "60",
+    "htf1_structure": 1,
+    "htf2": "240",
+    "htf2_structure": 1,
+    "gamma_regime": "NOT SET",
+    "call_wall": null,
+    "put_wall": null,
+    "gamma_flip": null
+  },
+  "location": {
+    "value_area_high": 62800.0,
+    "poc": 62600.0,
+    "value_area_low": 62300.0,
+    "position": "DISCOUNT",
+    "long_zone": {
+      "ready": true,
+      "in_zone": true,
+      "top": 62100.0,
+      "mid": 61950.0,
+      "bottom": 61790.0,
+      "leg_high": 62900.0,
+      "leg_low": 61500.0,
+      "zone_volume": "THIN"
+    },
+    "short_zone": {
+      "ready": false,
+      "in_zone": false,
+      "bottom": null,
+      "mid": null,
+      "top": null,
+      "leg_low": null,
+      "leg_high": null,
+      "zone_volume": "UNKNOWN"
+    }
+  },
+  "order_flow": {
+    "delta_pct": 22.4,
+    "volume_poc_position_pct": 71.0,
+    "close_position_pct": 88.0,
+    "relative_volume": 1.6,
+    "participation_ok": true,
+    "sellers_absorbed": false,
+    "buyers_absorbed": false,
+    "long_state": "IDLE",
+    "short_state": "IDLE"
+  },
+  "risk": {
+    "trades_today": 1,
+    "max_trades": 2,
+    "loss_streak": 0,
+    "max_loss_streak": 2
+  },
+  "trade": {
+    "side": "LONG",
+    "status": "ACTIVE",
+    "open": true,
+    "entry": 62000.0,
+    "stop": 61800.0,
+    "target": 62600.0,
+    "target_source": "POC",
+    "risk_per_unit": 200.0,
+    "reclaim_level": 62300.0,
+    "bars_since_entry": 0,
+    "trailing": false,
+    "trail_trigger": 62300.0
+  }
+}
